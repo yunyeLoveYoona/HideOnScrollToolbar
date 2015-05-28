@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:background="#EFECF0">
+
+
+    <com.example.administrator.hideonscrolltoolbar.view.HideToolbarListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/listview"
+        android:divider="@null"
+      >
+      </com.example.administrator.hideonscrolltoolbar.view.HideToolbarListView>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        >
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_favorite_outline_white_24dp"
+        android:background="@color/toolbar_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/image"
+        />
+
+</RelativeLayout>
